@@ -73,8 +73,10 @@ falafel-shop-website/
 ```
 ---
 ## See the Website
-
-
+### Home Page:
+![Image](https://github.com/user-attachments/assets/410a4ea4-e986-49d5-b223-8052a5f90a21)
+### About Us Page + Contact Page:
+![Image](https://github.com/user-attachments/assets/e90ea7f8-a2a6-4d40-a041-6f7a0010a061)
 ---
 
 ## How to Use
