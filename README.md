@@ -9,6 +9,7 @@ Welcome to the repository for the **Falafel Shop Website**! This is a simple, re
 - [Website Pages](#website-pages)
 - [File Structure](#file-structure)
 - [How to Use](#how-to-use)
+- [See the Website](#see-the-website)
 - [License](#license)
 
 ---
