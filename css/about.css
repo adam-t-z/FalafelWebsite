@@ -1,0 +1,144 @@
+/* About Page Specific Styles */
+
+/* About Page Header */
+header {
+    background-color: #f4a261;
+    /* Matches the navigation bar color */
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+/* Team Section */
+.team-container {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 220px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2a9d8f;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Values Section */
+.values-section {
+    margin-bottom: 2rem;
+
+}
+
+.values-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.values-section ul li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+    color: #555;
+}
+
+.values-section ul li::before {
+    content: "✓";
+    color: #2a9d8f;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-section blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #2a9d8f;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.testimonials-section blockquote footer {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.quoted_name {
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        max-width: 100%;
+    }
+
+    .values-section ul {
+        padding-left: 0;
+    }
+}

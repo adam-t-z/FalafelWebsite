@@ -1,0 +1,158 @@
+/* Hero Section */
+.hero {
+    text-align: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding: 4rem 1rem;
+    background: url('../media/img/falafel_breakfast.jpg') no-repeat center/cover;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Transparency */
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+/* About Section */
+.about-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Featured Falafels Section */
+.featured-falafels {
+    padding: 2rem;
+    background-color: #e9c46a;
+    text-align: center;
+}
+
+.featured-falafels h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.falafel-item {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+}
+
+.falafel-item img {
+    width: 100%;
+    /* Ensures the image scales to its container */
+    max-width: 450px;
+    border-radius: 10px;
+    /* Optional: keeps rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.falafel-item figcaption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.falafel-item p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+/* for smaller screens */
+@media (max-width: 768) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .falafel-item img {
+        max-width: 250px;
+    }
+}
+
+
+/* Location Section Styles */
+.location-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 700px;
+}
+
+.location-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.location-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.location-details {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.location-details p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.location-details strong {
+    color: #000;
+}
+
+.map iframe {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+    <header>
+        <h1>Order Online</h1>
+        <p>Enjoy your favorite dishes delivered to your doorstep!</p>
+    </header>
+
+    <main>
+        <section class="order-section">
+            <h2>Place Your Order</h2>
+            <form action="submit_order.php" method="POST" class="order-form">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                </div>
+
+                <!-- Dish Selection -->
+                <div class="form-group">
+                    <label for="dish">Select a Dish:</label>
+                    <select id="dish" name="dish" required>
+                        <option value="" disabled selected>Select a dish</option>
+                        <option value="classic_falafel_plate">Classic Falafel Plate</option>
+                        <option value="falafel_wrap">Falafel Wrap</option>
+                        <option value="falafel_bowl">Falafel Bowl</option>
+                        <option value="hummus_pita">Hummus and Pita</option>
+                        <option value="stuffed_grape_leaves">Stuffed Grape Leaves</option>
+                    </select>
+                </div>
+
+                <!-- Quantity -->
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                </div>
+
+                <!-- Additional Notes -->
+                <div class="form-group">
+                    <label for="notes">Additional Notes (Optional):</label>
+                    <textarea id="notes" name="notes" rows="4"
+                        placeholder="Add any special instructions or requests"></textarea>
+                </div>
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address" rows="4" placeholder="Enter your delivery address"
+                        required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Your Restaurant Name. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

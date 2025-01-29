@@ -1,0 +1,39 @@
+/* Category Header Styling */
+.category-header {
+    background-color: #f4f4f4;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+/* General Table Enhancements */
+.menu-table th {
+    background-color: #f88528;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-table td,
+.menu-table th {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.menu-table {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.menu-section h2 {
+    text-align: center;
+    padding: 1rem;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falafel Fiesta | Contact Us</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="media/img/falafel_logo_sandwich.png" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Fill out the form below to get in touch.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Online</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>If you have questions, feedback, or just want to say hi, send us a message!</p>
+            <p>And this is where you can find our <a href="index.html#location-section">Contact Info</a></p>
+
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}"
+                    required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here"
+                    required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Falafel Fiesta. All rights reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        <p>Open: Monday - Sunday, 10 AM - 10 PM</p>
+    </footer>
+</body>
+
+</html>
